@@ -1,0 +1,152 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+* {
+  margin: 0;
+  background-color: rgb(16, 22, 48);
+}
+
+.mlo-logo {
+  animation: fade-in 3s
+}
+
+.mlo-logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.navigation-bar {
+  background-color: rgb(16, 22, 48);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  color: #ffffff;
+  align-items: center;
+  height: 50px;
+  padding: 30px ;
+}
+
+.navigation-bar > button > a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-aside {
+  gap: 50px;
+  display: flex;
+  list-style: none;  
+  transition: transform 0.4s ;
+  animation: fade-in 3s
+}
+
+.nav-aside > li > a:hover {
+  color: #4D97D6;
+  padding: 1rem;
+  transform: scale(1.2);
+  font-size: large;
+  transition: 0.2s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+.nav-aside > li > a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.contact {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #4D97D6;
+  padding: 18px 40px;
+  border-radius: 15px;
+  text-decoration: none;
+  list-style: none;
+  transition: transform 0.4s ;
+  animation: fade-in 3s
+
+}
+
+.contact:hover {
+  transition: 0.2s;
+  font-size: large;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contact > a {
+  text-decoration: none;
+  color: white;
+  background-color: #4D97D6;
+  padding: 1rem;
+}
+
+.word { 
+  padding: 50px;
+  animation: fade-in 3s
+
+}
+.one {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color:rgb(127, 133, 133);
+}
+
+.two {
+  font-family: 'Nocturne Serif', serif;
+  width: 900px;
+  font-size: 120px;
+  color: white;
+  line-height: 90px;
+  font-variant: small-caps;
+}
+
+.fullstop {
+  font-size: 130px;
+  color: #4D97D6;
+}
+
+.pprojet {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #4D97D6;
+  padding: 20px 40px;
+  border-radius: 15px;
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  transition: transform 0.4s ;
+}
+
+.pprojet:hover {
+  color:  rgb(16, 22, 48);
+  transition: 0.2s;
+  transform: scale(1.1);
+  cursor:pointer;
+}
+
+.link {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  background-color: #4D97D6;
+  color: #ffffff;
+}
+
+.about-me {
+  padding: 50px;
+  
+}
