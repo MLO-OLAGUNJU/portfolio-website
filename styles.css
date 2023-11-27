@@ -218,13 +218,14 @@ a {
 }
 
 .portfolio {
+  margin-top: 150px;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
 }
 
 .pfheader {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   font-size: 30px;
 }
 
@@ -235,6 +236,7 @@ a {
 .projects {
   display: flex;
   gap: 50px;
+  margin-bottom: 200px;
 }
 
 .projectnumber {
@@ -254,6 +256,7 @@ a {
 
 .project-name {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .project-framenimage{
