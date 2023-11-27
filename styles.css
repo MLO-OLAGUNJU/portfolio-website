@@ -11,6 +11,8 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: rgb(16, 22, 48);
 }
 
@@ -148,5 +150,10 @@
 
 .about-me {
   padding: 50px;
-  
+}
+
+.frame {
+    height: 400px;
+    width: 400px;
+    background: #4D97D6;
 }
