@@ -7,13 +7,15 @@
   }
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: rgb(16, 22, 48);
+}
+
+body{
+  padding: 90px 100px;
 }
 
 .mlo-logo {
@@ -26,14 +28,13 @@
 }
 
 .navigation-bar {
+  margin: -25px;
   background-color: rgb(16, 22, 48);
   display: flex;
   justify-content: space-between;
-  margin: 0;
   color: #ffffff;
   align-items: center;
   height: 50px;
-  padding: 30px ;
 }
 
 .navigation-bar > button > a {
@@ -57,6 +58,7 @@
   transition: 0.2s;
   cursor: pointer;
   transform: scale(1.1);
+  font-weight: 600;
 }
 
 
@@ -77,7 +79,6 @@
   list-style: none;
   transition: transform 0.4s ;
   animation: fade-in 3s
-
 }
 
 .contact:hover {
@@ -85,6 +86,7 @@
   font-size: large;
   transform: scale(1.1);
   cursor: pointer;
+  font-weight: 600;
 }
 
 .contact > a {
@@ -95,9 +97,9 @@
 }
 
 .word { 
-  padding: 50px;
-  animation: fade-in 3s
-
+  margin-top: 100px;
+  animation: fade-in 3s;
+  margin-bottom: 50px;
 }
 .one {
   font-family: 'Poppins', sans-serif;
@@ -127,11 +129,12 @@
   padding: 20px 40px;
   border-radius: 15px;
   text-decoration: none;
-  width: 200px;
+  width: 250px;
   text-align: center;
   font-weight: bold;
   font-size: larger;
-  transition: transform 0.4s ;
+  transition: transform 0.4s;
+  margin-bottom: 250px;
 }
 
 .pprojet:hover {
@@ -139,6 +142,7 @@
   transition: 0.2s;
   transform: scale(1.1);
   cursor:pointer;
+  font-weight: 600;
 }
 
 .link {
@@ -148,12 +152,37 @@
   color: #ffffff;
 }
 
-.about-me {
-  padding: 50px;
+.about-me{
+  display: flex;
+  gap: 70px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-content h1{
+  margin-bottom: 30px;
+}
+.about-content p{
+  color: rgb(186, 186, 186);
+  width: 500px;
+}
+
+.imgnframe img{
+  border-radius: 8px;
+  position: absolute;
+  top: -50px;
+  left: 0px;
+}
+
+.imgnframe{
+  position: relative;
 }
 
 .frame {
-    height: 400px;
+    height: 500px;
     width: 400px;
-    background: #4D97D6;
+    background: rgb(16, 22, 48);
+    border: 15px solid #4D97D6;
+    border-radius: 8px;
+    margin-left: 40px;
 }
