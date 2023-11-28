@@ -6,37 +6,79 @@
     <title>Home: MLO, A FullStack Developer</title>
     <link rel="icon" type="image" href="./website icon.png" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nocturne+Serif:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
   </head>
-  <body>
+  <body class="body">
     <nav class="navigation-bar">
-        <img class="mlo-logo" src="./1.png" alt="mlo-logo" width="150" />
+      <div>
+        <img class="mlo-logo" src="./website icon.png" alt="mlo-logo" width="150" /></a>
+      </div>
+      
+      <div>
+        <ul class="nav-aside">
+          <li>
+            <a href="./index.html">HOME</a>
+          </li>
+  
+          <li>
+            <a href="#about">ABOUT ME</a>
+          </li>
+  
+          <li>
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+  
+          <li>
+            <a href="#services">SERVICES</a>
+          </li>
+          <li>
+            <a href="#experience">EXPERIENCE</a>
+          </li>
+        </ul>
+      </div>
 
-      <ul class="nav-aside">
+      <div>
+        <button class="contact">
+          <a href="https://www.linkedin.com/in/mlo-olagunju/">CONTACT</a>
+        </button>
+      </div>
+      
+      <div onclick="showNav()" class="menu1">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN -->
+    <nav class="nav-aside-mobile" id="showNavItem">    
+      <ul>
         <li>
-          <a href="./home.html">HOME</a>
+          <a href="./index.html">HOME</a>
         </li>
-
+  
         <li>
           <a href="#about">ABOUT ME</a>
         </li>
-
+  
         <li>
-          <a href="./portfolio.html">PORTFOLIO</a>
+          <a href="#portfolio">PORTFOLIO</a>
         </li>
-
+  
         <li>
-          <a href="./services.html">SERVICES</a>
+          <a href="#services">SERVICES</a>
         </li>
         <li>
-          <a href="./experience.html">EXPERIENCE</a>
+          <a href="#experience">EXPERIENCE</a>
         </li>
       </ul>
-      <li class="contact">
-        <a href="./contact.html">CONTACT</a>
-      </li>
+      <button class="contact-mobile">
+        <a href="https://www.linkedin.com/in/mlo-olagunju/">CONTACT</a>
+      </button>
     </nav>
+    <!-- MOBILE NAVIGATION BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN  -->
+
+    
 
     <header class="word">
       <p class="one">I'm a</p>
@@ -45,14 +87,14 @@
       </h1>
       <br/> <br/> <br/>
       <p class="pprojet">
-        <a href="./contact.html" class="link">Previous Projects</a>
+        <a href="https://github.com/MLO-OLAGUNJU?tab=repositories" class="link">Previous Projects</a>
       </p>
     </header>
 
     <section class="about-me">
       <div class="imgnframe">
         <div class="frame"></div>
-        <img src="./mlo.jpg" alt="####" height="500px"  width="400px" />
+        <img class="mlo-image" src="./mlo.jpg" alt="####" height="500px"  width="400px" />
       </div>
 
       <div id="about" class="about-content">
@@ -71,73 +113,261 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h1 class="pfheader">PORTFOLIO</h1>
       <div class="projects">
         <div>
           <h1 class="projectnumber">PROJECT 1</h1>
 
-          <h1 class="project-name">Social Media Website</h1>
-          <p>As a full-stack software developer, I thrive on turning
-            innovative ideas into functional, user-friendly applications.
-             With a solid foundation in both front-end and back-end 
-             technologies, I am passionate about creating seamless 
-             digital solutions. Let's transform concepts into reality 
-             and build the future of technology together.
+          <h1 class="project-name">X (Twitter) Clone</h1>
+          <p>Dive into my <a href="">Twitter Sign-Up Page Clone project</a>, 
+            meticulously crafted with HTML and CSS. This endeavor
+             captures the essence of Twitter's registration interface, 
+             showcasing my proficiency in front-end development. 
+             Explore the codebase on GitHub to witness the precision 
+             and attention to detail poured into recreating this key 
+             component. Immerse yourself in the art of web design 
+             through this hands-on exploration.
            </p>
            <p class="read-more"> <a href="https://www.linkedin.com/in/mlo-olagunju/">Read more &rarr; </a></p>
         </div>
 
         <div class="project-framenimage">
           <div class="project-frame"></div>
-          <img class="project-img" src="./social-media.png" alt="£££" height="300px"  width="450px" />
+          <img class="project-img" src="./twitter-clone.png" alt="£££" height="331px"  width="425px" />
         </div>
       </div>
       <div class="projects">
           <div class="project-framenimage">
             <div class="project-frame"></div>
-            <img class="project-img" src="./social-media.png" alt="£££" height="300px"  width="450px" />
+            <img class="project-img" src="./fb-clone.png" alt="£££" height="331px"  width="425px" />
           </div>
 
           <div>
-            <h1 class="projectnumber">PROJECT 1</h1>
+            <h1 class="projectnumber">PROJECT 2</h1>
   
-            <h1 class="project-name">Social Media Website</h1>
-            <p>As a full-stack software developer, I thrive on turning
-              innovative ideas into functional, user-friendly applications.
-               With a solid foundation in both front-end and back-end 
-               technologies, I am passionate about creating seamless 
-               digital solutions. Let's transform concepts into reality 
-               and build the future of technology together.
+            <h1 class="project-name">Facebook Clone</h1>
+            <p>Discover my <a href="">Facebook Sign-Up Page Clone project</a>, 
+              meticulously crafted using HTML and CSS. This project 
+              reflects my keen eye for detail and proficiency in 
+              front-end development. By recreating Facebook's sign-up 
+              interface, I showcase a commitment to precision and user 
+              experience. Dive into the code on GitHub for a closer look 
+              at the implementation, and explore the artistry of web 
+              design in this hands-on endeavor.
              </p>
-             <p class="read-more"> <a href="https://www.linkedin.com/in/mlo-olagunju/">Read more &rarr; </a></p>
+             <p class="read-more"> <a href="https://github.com/MLO-OLAGUNJU/facebook-clone">Read more &rarr; </a></p>
           </div>
       </div>
 
       <div class="projects">
         <div>
-          <h1 class="projectnumber">PROJECT 1</h1>
+          <h1 class="projectnumber">PROJECT 3</h1>
 
           <h1 class="project-name">Social Media Website</h1>
-          <p>As a full-stack software developer, I thrive on turning
-            innovative ideas into functional, user-friendly applications.
-             With a solid foundation in both front-end and back-end 
-             technologies, I am passionate about creating seamless 
-             digital solutions. Let's transform concepts into reality 
-             and build the future of technology together.
+          <p>Explore my <a href="">Social Media Home Page project</a>, 
+            a showcase of my HTML and CSS skills. I meticulously 
+            recreated the dynamic interface of popular platforms 
+            like Instagram, complete with posts and a responsive 
+            side navigation bar. Witness the fusion of design 
+            and functionality, providing users with an immersive 
+            experience. Delve into the code on GitHub for a 
+            detailed examination of this captivating web development venture.
            </p>
-           <p class="read-more"> <a href="https://www.linkedin.com/in/mlo-olagunju/">Read more &rarr; </a></p>
+           <p class="read-more"> <a href="https://github.com/MLO-OLAGUNJU/mlo-social-media">Read more &rarr; </a></p>
         </div>
 
         <div class="project-framenimage">
           <div class="project-frame"></div>
-          <img class="project-img" src="./social-media.png" alt="£££" height="300px"  width="450px" />
+          <img class="project-img" src="./social-media.png" alt="£££" height="331px"  width="425px" />
         </div>
       </div>
-     
+
+      <div class="projects">
+        <div class="project-framenimage">
+          <div class="project-frame"></div>
+          <img class="project-img" src="./portfolio.png" alt="£££" height="331px"  width="425px" />
+        </div>
+
+        <div>
+          <h1 class="projectnumber">PROJECT 4</h1>
+
+          <h1 class="project-name">Portfolio Website</h1>
+          <p>Dive into my <a href="">Portfolio Website project</a>, 
+            meticulously crafted with HTML and CSS. This endeavor 
+            mirrors the aesthetics and functionality of an exemplary 
+            portfolio site. Immerse yourself in the responsive design 
+            and intuitive user interface, showcasing my commitment 
+            to creating impactful digital experiences. Explore the 
+            code on GitHub for an in-depth understanding of the 
+            craftsmanship behind this dynamic and visually appealing
+             web development project.
+           </p>
+           <p class="read-more"> <a href="https://github.com/MLO-OLAGUNJU/portfolio-website">Read more &rarr; </a></p>
+        </div>
+    </div>
+
+      <p class="pprojet portfolio-btn">
+        <a href="./contact.html" class="link">View all</a>
+      </p>
+       
       
     </section>
+
+
+    <section id="services" class="services">
+      <h1 class="serviceheader">SERVICES</h1>
+
+      <div class="boxes">
+        <div class="box">
+          <div class="box-header">
+            <div class="icon-circle">
+              <i class="fa-brands fa-react icon"></i>
+            </div>
+            <h1>FRONT-END DEVELOPMENT</h1>
+          </div>
+          <p>Elevate your online presence with my Frontend Development
+             expertise. I craft visually appealing and responsive 
+             interfaces using HTML, CSS, and JavaScript, 
+             ensuring a compelling user experience for your audience.
+          </p>
+        </div>
+        <div class="box">
+          <div class="box-header">
+            <div class="icon-circle">
+              <i class="fa-brands fa-node icon"></i>
+            </div>
+            <h1>BACK-END DEVELOPMENT</h1>
+          </div>
+          <p>Empower your digital infrastructure with my Backend 
+            Development services. I specialize in designing 
+            robust server-side solutions, ensuring seamless 
+            functionality, security, and scalability for your applications and systems.
+          </p>
+        </div>
+        <div class="box">
+          <div class="box-header">
+            <div class="icon-circle">
+              <i class="fa-solid fa-bug icon"></i>
+            </div>
+            <h1>BUG FIXES</h1>
+          </div>
+          <p>Resolve issues swiftly with my Bug Fixing service. 
+            I meticulously identify and fix software bugs, ensuring 
+            seamless functionality. Trust me to enhance your 
+            application's performance and user experience.
+          </p>
+        </div>
+        <div class="box">
+          <div class="box-header">
+            <div class="icon-circle">
+              <i class="fa-solid fa-code icon"></i>
+            </div>
+            <h1>FULLSTACK DEVELOPMENT</h1>
+          </div>
+          <p>Elevate your project with my Full Stack Development service. 
+            From intuitive frontends using HTML, CSS, and 
+            JavaScript to robust backends with Node.js and
+             databases, I ensure end-to-end excellence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <h1 class="experienceheader">EXPERIENCE</h1>
+
+      <div class="experiencess">
+        <div class="expe-boxes">
+          <i class="fa-brands fa-aws"></i>
+          <h1>AWS</h1>
+        </div>
+        <div class="expe-boxes">
+          <i class="fa-brands fa-html5"></i>
+          <h1>HTML</h1>
+        </div>
+        <div class="expe-boxes">
+          <i class="fa-brands fa-css3-alt"></i>
+          <h1>CSS3</h1>
+        </div>
+        <div class="expe-boxes">
+          <i class="fa-brands fa-react"></i>
+          <h1>React.JS</h1>
+        </div>
+        <div class="expe-boxes">
+          <i class="fa-brands fa-square-js"></i>
+          <h1>JavaScript</h1>
+        </div>
+        <div class="expe-boxes">
+          <i class="fa-brands fa-node"></i>
+          <h1>Node.JS</h1>
+        </div>
+        <div class="expe-boxes">
+          <i class="fa-brands fa-git-alt"></i>
+          <h1>Git</h1>
+        </div>
+        <div class="expe-boxes">
+          <i class="fa-brands fa-github"></i>
+          <h1>GitHub</h1>
+        </div>
+       
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <h1>CONTACT</h1>
+      <div class="foot">
+        <div class="Message">
+          <p class="dropmsg">Drop Me a Message</p>
+          <p class="connectword">Connect with me! Send your inquiries and ideas.
+             Let's collaborate to bring your vision to life. 
+             Looking forward to hearing from you.</p>
+          <div class="contact-details">
+            <div class="footer-icon-box"><i class="fa-solid fa-phone"></i></div>
+            <p class="details">+234 (90)-3820-7894</p>
+          </div>
+          <div class="contact-details">
+            <div class="footer-icon-box"><i class="fa-solid fa-envelope"></i></div>
+            <p class="details">oladeleemmanuel <br> olagunju@gmail.com</p>
+          </div>
+          <div class="contact-details">
+            <div class="footer-icon-box"><i class="fa-solid fa-location-dot"></i></i></div>
+            <p class="details">Ajah, Lekki,<br> Lagos State, Nigeria</p>
+          </div>
+
+        </div>
+        <div class="form-div">
+          <form class="form">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input class="input-message" type="text" placeholder="Message">
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="hrule"></div>
+
+      <div class="last-bar">
+        <div>
+          <img class="mlo-logo" src="./website icon.png" alt="mlo-logo" width="150" /></a>
+        </div>
+
+        <div>
+          <p>&copy;2023 - MLO-OLAGUNJU, All rights reserved</p>
+        </div>
+
+        <div class="last-bar-icons">
+          <div class="footer-icon-box"><i class="fa-brands fa-facebook"></i></div>
+          <div class="footer-icon-box"><i class="fa-brands fa-instagram"></i></div>
+          <div class="footer-icon-box"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="footer-icon-box"><i class="fa-brands fa-x-twitter"></i></div>
+        </div>
+      </div>
+    </footer>
   
 
+    <script src="./main.js"></script>
   </body>
 </html>
