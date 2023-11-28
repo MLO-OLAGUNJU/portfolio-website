@@ -15,7 +15,9 @@
 }
 
 body{
-  padding: 90px 100px;
+  padding-top: 90px;
+  padding-left: 100px;
+  padding-right: 150px;
 }
 
 .mlo-logo {
@@ -234,6 +236,7 @@ a {
 }
 
 .projects {
+  justify-content: space-between;
   display: flex;
   gap: 50px;
   margin-bottom: 200px;
@@ -261,6 +264,7 @@ a {
 
 .project-framenimage{
   position: relative;
+  /* margin-right: 50px; */
 }
 
 .project-img{
