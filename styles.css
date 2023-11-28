@@ -272,3 +272,14 @@ a {
   top: -50px;
   left: 35px;
 }
+
+.read-more{
+  margin-top: 20px;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+}
