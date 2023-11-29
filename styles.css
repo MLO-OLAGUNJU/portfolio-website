@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 /* MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN  */
-.menu1 {
+/* .menu1 {
   display: none;
 }
 
@@ -72,7 +72,7 @@
   cursor: pointer;
   transform: scale(1.1);
   font-weight: 600;
-}
+} */
 /* MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN MOBILE NAV BAR DESIGN */
 
 body {
@@ -608,26 +608,80 @@ a {
   color: rgb(16, 22, 48);
 }
 
+.hamburger{
+  display: none;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 3px auto;
+  -webkit-transform: all 0.3s ease-in-out;
+  transform: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
 
 
 @media (max-width: 480px) {
-  .body {
-    /* padding: 70px 30px; */
+
+  .mlo-logo {
+    height: 40px;
+    width: 40px;
+    background: none;
   }
 
   .navigation-bar{
+    min-height: 70px;
+    width: 100%;
+    margin-left: 0;
+    padding: 0 30px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    position: fixed;
+    top: 20px;
     margin-left: auto;
     margin-right: auto;
   }
-  .nav-aside,
-  .contact {
+
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(6.5px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-6.5px) rotate(-45deg);
+  }
+  
+  .nav-aside {
+    position: fixed;
+    right: -100%;
+    top: 150px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(16, 22, 48);
+    width: 70%;
+    text-align: start;
+    padding-left: 50px;
+    height: 100%;
+  }
+
+  .contact{
     display: none;
   }
 
-  .menu1 {
-    display: flex;
-    font-size: 20px;
+  .nav-item {
+    margin: 16px 0;
   }
+
+  .nav-aside.active{
+    right: 0;
+  }
+
 
   .word {
     margin-left: 30px;
