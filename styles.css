@@ -557,8 +557,15 @@ a {
   font-size: 18px;
 }
 
-.footer-icon-box{
+.contact-details .footer-icon-box a i {
+  font-size: 15px;
+}
+
+.footer-icon-box a i {
   font-size: 30px;
+}
+
+.footer-icon-box{
   width: 60px;
   height: 60px;
   padding: 10px;
@@ -611,6 +618,7 @@ a {
 .hamburger{
   display: none;
 }
+
 .bar{
   display: block;
   width: 25px;
